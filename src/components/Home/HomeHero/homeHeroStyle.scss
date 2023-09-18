@@ -1,0 +1,237 @@
+#homeHero{
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  //background: url("../../../assets/img/heroBg.jpg") no-repeat center/cover;
+  .homeHero{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    //backdrop-filter: blur(2px);
+    &--con{
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute;
+      left: 0;
+      padding: 0 50px;
+      border-right: 2px solid #ff7300;
+      a{
+        color: #ff7300;
+        font-size: 26px;
+        margin: 20px 0;
+        transition: .5s;
+        &:hover{
+          color: white;
+          transform: scale(1.2);
+          transition: .5s;
+        }
+      }
+      &__a{
+        animation: .6s a alternate;
+        @keyframes a {
+          0%{
+            transform: translateX(-1200px);
+          }
+        }
+      }
+      &__a1{
+        animation: .8s a alternate;
+        @keyframes a {
+          0%{
+            transform: translateX(-1200px);
+          }
+        }
+      }
+      &__a2{
+        animation: 1s a alternate;
+        @keyframes a {
+          0%{
+            transform: translateX(-1200px);
+          }
+        }
+      }
+      &__a3{
+        animation: 1.2s a alternate;
+        @keyframes a {
+          0%{
+            transform: translateX(-1200px);
+          }
+        }
+      }
+      &__a4{
+        animation: 1.4s a alternate;
+        @keyframes a {
+          0%{
+            transform: translateX(-1200px);
+          }
+        }
+      }
+    }
+    &--info{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+       h1{
+         text-align: start;
+         font-size: 54px;
+         font-weight: 800;
+         color: white;
+         span{
+           color: #ff7300;
+           padding-right: 3px;
+           border-right: 4px solid #ff7300;
+           animation: flashin-border 1s step-start infinite;
+           @keyframes flashin-border {
+             0% {
+               border-color: white;
+             }
+
+             50% {
+               border-color: transparent;
+             }
+
+             100% {
+               border-color: white;
+             }
+           }
+         }
+       }
+    }
+  }
+}
+
+
+@media (max-width: 880px) {
+  #homeHero{
+    .homeHero{
+      &--block{
+        display: none;
+      }
+      &--con{
+        bottom: 40px;
+        width: 100%;
+        height: 0;
+        padding: 50px 0;
+        border-right: none;
+        border-top: 2px solid #ff7300;
+        flex-direction: row-reverse;
+        a{
+          margin: 0 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  #homeHero{
+    .homeHero{
+      &--info{
+        h1{
+          font-size: 50px;
+        }
+        button{
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  #homeHero{
+    .homeHero{
+      &--info{
+        h1{
+          font-size: 40px;
+        }
+        button{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  #homeHero{
+    .homeHero{
+      &--info{
+        h1{
+          font-size: 35px;
+          font-weight: 500;
+        }
+        button{
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #homeHero{
+    .homeHero{
+      &--info{
+          h1{
+            font-size: 33px;
+          }
+      }
+      &--con{
+        padding: 30px 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  #homeHero{
+    .homeHero{
+      &--info{
+        h1{
+          font-size: 30px;
+        }
+        button{
+          padding: 10px 30px;
+        }
+      }
+      &--con{
+        a{
+          margin: 0 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #homeHero{
+    .homeHero{
+      &--info{
+          h1{
+            font-size: 28px;
+          }
+      }
+      &--con{
+        a{
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+}

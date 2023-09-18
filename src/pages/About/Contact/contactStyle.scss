@@ -1,0 +1,117 @@
+#contact{
+  background: black;
+  padding: 80px 0;
+  .contact-rel{
+    display: flex;
+    height: 500px;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+    &--shadow{
+      width: 1100px;
+      height: 100px;
+      position: absolute;
+      bottom: 0;
+      z-index: 4;
+      background: linear-gradient(transparent,rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.83),black);
+    }
+    .contact-rel-block{
+      position: absolute;
+      .contact-adjust{
+        width: 190px;
+        position: absolute;
+        z-index: 2;
+        top: 320px;
+        left: 400px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        font-size: 50px;
+      }
+      .contact{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        border-radius: 50%;
+        width: 1000px;
+        height: 1000px;
+        position: relative;
+        transform: rotate(0deg);
+        transition: .4s;
+        &--block{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 150px;
+          height: 200px;
+          &__link{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 60px;
+            transition: .5s;
+          }
+          a{
+            color: white;
+            font-weight: 600;
+            font-size: 20px;
+            margin-top: 15px;
+          }
+        }
+
+        .five{
+          align-self: center;
+          transform: rotate(90deg);
+          margin-right: 25px;
+        }
+
+        .one{
+          align-self: center;
+          transform: rotate(-90deg);
+          margin-left: 25px;
+        }
+
+        .fore{
+          position: absolute;
+          right: 140px;
+          top: 120px;
+          transform: rotate(45deg);
+        }
+
+        .two{
+          position: absolute;
+          left: 140px;
+          top: 120px;
+          transform: rotate(-45deg);
+        }
+
+        .six{
+          position: absolute;
+          left: 140px;
+          bottom: 120px;
+          transform: rotate(-135deg);
+        }
+
+        .eight{
+          position: absolute;
+          right: 140px;
+          bottom: 120px;
+          transform: rotate(135deg);
+        }
+
+        .seven{
+          position: absolute;
+          transform: rotate(180deg);
+          bottom: 0;
+          left: 430px;
+        }
+      }
+    }
+  }
+}

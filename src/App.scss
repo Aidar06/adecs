@@ -1,0 +1,44 @@
+@import "./components/Header/headerStyle";
+@import "./components/Home/homeStyle";
+@import "./src/pages/DetailHome/ditailHomeStyle";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff7300;
+  border-radius: 5px;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1640px) {
+  .container{
+    width: 90%;
+  }
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+
+}

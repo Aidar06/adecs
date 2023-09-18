@@ -1,0 +1,227 @@
+#sip{
+  padding: 120px 0;
+  background: rgb(0, 0, 0);
+  overflow: hidden;
+  .sipBurger{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 100;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--block{
+      width: 50%;
+      height: 70%;
+      background: rgba(255, 115, 0, 0.37);
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      transition: .5s;
+      &__icon{
+        color: white;
+        font-size: 30px;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+      }
+      &__info{
+        width: 90%;
+        height: 70%;
+        h1{
+          font-size: 25px;
+          color: white;
+          font-family: sans-serif;
+          text-align: center;
+        }
+        h3{
+          margin-top: 50px;
+          font-size: 25px;
+          color: white;
+          font-family: sans-serif;
+        }
+        ul{
+          li{
+            font-size: 20px;
+            color: white;
+            font-family: sans-serif;
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            div{
+              background: white;
+              width: 5px;
+              height: 5px;
+              border-radius: 50%;
+              margin-right: 5px;
+            }
+          }
+        }
+        div{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          h4{
+            font-size: 22px;
+            font-weight: 700;
+            color: white;
+            font-family: sans-serif;
+            border-radius: 5px;
+            background: red;
+            padding: 10px 20px;
+            margin-top: 20px;
+            animation: h4 4s infinite alternate;
+            @keyframes h4 {
+              100%{
+                transform: translateY(20px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .sip{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--group{
+      width: 45%;
+      h1{
+        color: #ff7300;
+        font-size: 40px;
+        font-family: sans-serif;
+      }
+      p{
+        color: white;
+        font-size: 20px;
+        font-family: sans-serif;
+        margin-top: 20px;
+      }
+      button{
+        padding: 6px 40px;
+        color: white;
+        background: #ff7300;
+        border: 2px solid #ff7300;
+        font-weight: 500;
+        border-radius: 10px;
+        transition: .4s;
+        letter-spacing: 1px;
+        margin-top: 30px;
+
+        &:hover {
+          background: transparent;
+          color: white;
+        }
+      }
+    }
+    &--image{
+      width: 45%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        animation: sip 5s infinite alternate;
+        @keyframes sip {
+          0%{
+            transform: translateY(-40px);
+          }
+          100%{
+            transform: translateY(30px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #sip{
+    .sip{
+      &--group{
+        width: 48%;
+        h1{
+          font-size: 35px;
+        }
+        p{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  #sip{
+    padding: 80px 0;
+    .sip{
+      flex-direction: column-reverse;
+      &--group{
+        width: 100%;
+        h1{
+          font-size: 35px;
+        }
+        p{
+          font-size: 18px;
+        }
+      }
+      &--image{
+        width: 60%;
+        margin-top: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #sip{
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  #sip{
+    .sip{
+      &--group{
+        h1{
+          font-size: 30px;
+        }
+        p{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  #sip{
+    .sip{
+      &--image{
+        width: 80%;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 375px) {
+  #sip{
+    .sip{
+      &--group{
+        h1{
+          font-size: 26px;
+        }
+        p{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

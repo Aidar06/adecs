@@ -1,0 +1,285 @@
+#homeLessons{
+  padding: 120px 0;
+  width: 100%;
+  background: black;
+  .homeLessons{
+    h1{
+      color: #ff7300;
+      font-size: 35px;
+      text-align: center;
+      font-family: sans-serif;
+    }
+    &--group{
+      margin-top: 60px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      padding: 20px 0;
+      &__video{
+        margin: 10px 0;
+        background: #ff7300;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        iframe{
+          width: 500px;
+          height: 300px;
+          z-index: 2;
+        }
+        &--load{
+          position: absolute;
+          color: white;
+          font-size: 35px;
+          animation: 2s load infinite;
+          @keyframes load {
+            100%{
+              transform: rotate(360deg);
+            }
+          }
+        }
+      }
+    }
+    &--arrow{
+      margin-top: 30px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 40px;
+    }
+  }
+}
+
+@media (max-width: 1224px) {
+  #homeLessons{
+    .homeLessons{
+      &--group{
+        &__video{
+          iframe{
+            width: 450px;
+            height: 300px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #homeLessons{
+    .homeLessons{
+      &--group{
+        justify-content: space-between;
+        &__video{
+          iframe{
+            width: 380px;
+            height: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 794px) {
+  #homeLessons{
+    .homeLessons{
+      &--group{
+        &__video{
+          iframe{
+            width: 350px;
+            height: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 776px) {
+  #homeLessons{
+    padding: 20px 0 80px 0;
+    .homeLessons{
+      &--group{
+        &__video{
+          iframe{
+            width: 310px;
+            height: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 690px) {
+  #homeLessons{
+    .homeLessons{
+      h1{
+        font-size: 30px;
+      }
+      &--group{
+        &__video{
+          iframe{
+            width: 290px;
+            height: 190px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 635px) {
+  #homeLessons{
+    .homeLessons{
+      h1{
+        font-size: 28px;
+      }
+      &--group{
+        margin-top: 30px;
+        &__video{
+          iframe{
+            width: 250px;
+            height: 150px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 555px) {
+  #homeLessons{
+    .homeLessons{
+      h1{
+        font-size: 28px;
+      }
+      &--group{
+        margin-top: 30px;
+        &__video{
+          iframe{
+            width: 230px;
+            height: 150px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 510px) {
+  #homeLessons{
+    .homeLessons{
+      h1{
+        font-size: 28px;
+      }
+      &--group{
+        margin-top: 30px;
+        &__video{
+          iframe{
+            width: 220px;
+            height: 140px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 490px) {
+  #homeLessons{
+    .homeLessons{
+      h1{
+        font-size: 28px;
+      }
+      &--group{
+        margin-top: 30px;
+        justify-content: center;
+        &__video{
+          iframe{
+            width: 400px;
+            height: 230px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 451px) {
+  #homeLessons{
+    .homeLessons{
+      h1{
+        font-size: 26px;
+      }
+      &--group{
+        margin-top: 30px;
+        justify-content: center;
+        &__video{
+          iframe{
+            width: 360px;
+            height: 220px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #homeLessons{
+    .homeLessons{
+      h1{
+        font-size: 20px;
+      }
+      &--group{
+        &__video{
+          iframe{
+            width: 320px;
+            height: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  #homeLessons{
+    .homeLessons{
+      h1{
+        font-size: 20px;
+      }
+      &--group{
+        &__video{
+          iframe{
+            width: 300px;
+            height: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #homeLessons{
+    .homeLessons{
+      h1{
+        font-size: 20px;
+      }
+      &--group{
+        &__video{
+          iframe{
+            width: 240px;
+            height: 160px;
+          }
+        }
+      }
+    }
+  }
+}
