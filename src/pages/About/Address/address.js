@@ -38,6 +38,18 @@ const Address = () => {
                                 referrerPolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
+                    <div className="address--block">
+                        <div className="address--block__text">
+                            <h3><pre>Город Ош</pre></h3>
+                            <li>Adecs international</li>
+                            <li>Курманжан Датка 185/1</li>
+                        </div>
+                        <iframe className="address--block__map"
+                                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d758.2325142225982!2d72.79885626961237!3d40.52103701767832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDMxJzE1LjciTiA3MsKwNDcnNTguMiJF!5e0!3m2!1sru!2skg!4v1695393211582!5m2!1sru!2skg"
+                                allowFullScreen="" loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
 
                 </div>
             </div>

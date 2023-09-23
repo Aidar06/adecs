@@ -44,10 +44,6 @@ const HomeHero = () => {
 
     return (
         <section id='homeHero'>
-            <video controls>
-                <source src={video} type="video/mp4" />
-                Ваш браузер не поддерживает воспроизведение видео.
-            </video>
                 <div className='homeHero'>
                     <div className='homeHero--con'>
                         <a href="https://instagram.com/adecs_international?igshid=MzRlODBiNWFlZA==" target="_blank" className='homeHero--con__a'><BsInstagram/></a>

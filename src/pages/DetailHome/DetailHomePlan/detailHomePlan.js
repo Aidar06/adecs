@@ -10,15 +10,19 @@ const DetailHomePlan = () => {
             <div className="container">
                 <div className="detailPlane">
                     <h1>Планировка</h1>
-                    <div className='detailPlane--group'>
+                    <div style={{justifyContent: obj.floor === 2?'':'center'}} className='detailPlane--group'>
                         <div className="detailPlane--group__block">
                             <img src={obj.planImg1} alt=""/>
                             <h3>1-этаж</h3>
                         </div>
-                        <div className="detailPlane--group__block">
-                            <img src={obj.planImg2} alt=""/>
-                            <h3>2-этаж</h3>
-                        </div>
+                        {
+                            obj.floor === 2?
+                                (<div className="detailPlane--group__block">
+                                    <img src={obj.planImg2} alt=""/>
+                                    <h3>2-этаж</h3>
+                                </div>):
+                                ''
+                        }
                     </div>
                 </div>
             </div>

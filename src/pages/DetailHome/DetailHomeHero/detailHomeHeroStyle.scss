@@ -10,7 +10,8 @@
     width: 60%;
     margin: 0 auto;
     h1{
-      font-size: 50px;
+      font-size: 200px;
+      font-weight: 700;
       color: #ff7300;
       text-align: center;
       font-family: sans-serif;
@@ -38,6 +39,19 @@
   #detailHero{
     .detailHero{
       width: 100%;
+      h1{
+        font-size: 160px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #detailHero{
+    .detailHero{
+      h1{
+        font-size: 130px;
+      }
     }
   }
 }
@@ -47,7 +61,7 @@
   #detailHero{
     .detailHero{
       h1{
-        font-size: 40px;
+        font-size: 90px;
       }
       p{
         font-size: 18px;
