@@ -51,7 +51,7 @@ const Contact = () => {
                                 className="contact--block__link">
                                 <BsFillTelephoneFill/>
                             </div>
-                            <a href="#">0709087261</a>
+                            <a href="tel:+996708816996">0708816996</a>
                         </div>
 
                         <div className="contact--block five">

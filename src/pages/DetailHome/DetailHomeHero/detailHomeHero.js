@@ -10,7 +10,7 @@ const DetailHomeHero = () => {
             <div className="container">
                 <div className="detailHero">
                     <h1>{homeObj.name}</h1>
-                    <p>{homeObj.detailDescription}</p>
+                    <p>Мы не просто строим, мы привносим инновации!</p>
                 </div>
             </div>
         </section>

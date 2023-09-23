@@ -1,6 +1,7 @@
 import React from 'react';
 import pen from "../../../assets/img/pen-img.png";
 
+
 const HomePen = () => {
     return (
         <section id='pen'>

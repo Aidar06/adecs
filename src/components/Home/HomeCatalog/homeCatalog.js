@@ -23,7 +23,6 @@ const HomeCatalog = () => {
                                 </div>
                                 <img src={el.homeImg1} alt="sss" onClick={()=> goToDetail(el.id)}/>
                                 <h1>{el.name}</h1>
-                                <p>{el.description}</p>
                             </div>
                         ))
                     }
