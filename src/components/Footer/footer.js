@@ -15,7 +15,7 @@ const Footer = () => {
                         <a href="https://youtube.com/@adecsinternational9410?si=-b2jTY-id9hgJSQk">you tube</a>
                         <a href="https://www.facebook.com/ADECSinternational?mibextid=LQQJ4d">facebook</a>
                     </div>
-                    <div className="footer--block">
+                    <div className="footer--block link">
                         <a href="tel:+996 708 816 996">+996 708 816 996</a>
                         <a href="tel:+996 500 816 996">+996 500 816 996</a>
                         <a href="tel:+996 705 816 996">+996 705 816 996</a>

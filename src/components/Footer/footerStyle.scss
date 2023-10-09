@@ -52,8 +52,16 @@
         width: 100%;
       }
       &--block{
-        width: 45%;
+        width: 100%;
         margin-top: 20px;
+      }
+      .link{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        a{
+          width: 50%;
+        }
       }
     }
   }
