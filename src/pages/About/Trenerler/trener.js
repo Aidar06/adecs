@@ -1,6 +1,10 @@
 import React from 'react';
 import './trainer.scss';
-import alya from './../../../assets/img/aliya.jpeg'
+import urmat from './../../../assets/team/urmat.JPG'
+import edil from './../../../assets/team/edil.JPG'
+import ularbek from './../../../assets/team/ulatbek.jpg'
+import medina from './../../../assets/team/medina.JPG'
+import user from './../../../assets/team/user.png'
 import { useState, useEffect, useRef } from 'react';
 
 const Trainers = () => {
@@ -23,7 +27,44 @@ const Trainers = () => {
         };
     }, []);
 
-    const teem = [1,2,3,4,5,6]
+    const teem = [
+        {
+            id: 0,
+            name:'Бакырдинов Уларбек',
+            status: 'генеральный директор',
+            img: ularbek,
+        },
+        {
+            id: 1,
+            name:'Канаев Нуржигит',
+            status: 'Технический директор',
+            img: user,
+        },
+        {
+            id: 2,
+            name:'Жекшенов Эдиль',
+            status: 'прораб-менеджер',
+            img: edil,
+        },
+        {
+            id: 3,
+            name:'Бакытбек уулу Эмилбек',
+            status: 'главный архитектор',
+            img: user,
+        },
+        {
+            id: 4,
+            name:'Бейшенбекова Медина',
+            status: 'менеджер',
+            img: medina,
+        },
+        {
+            id: 5,
+            name:'Таалайбеков Урмат',
+            status: 'сметчик',
+            img: urmat,
+        },
+    ]
     return (
         <section id="trainer">
             <div className="container">
@@ -36,13 +77,13 @@ const Trainers = () => {
 
                         {
                             teem.map(el => (
-                                <div key={el} className="trainer--group__block">
+                                <div key={el.id} className="trainer--group__block">
                                     <div className='trainer--group__block--img'>
-                                        <img src={alya} alt="img"/>
+                                        <img src={el.img} alt="img"/>
                                         <div></div>
                                     </div>
-                                    <h3><pre>Жумашев Жумаш</pre></h3>
-                                    <li>Основатель</li>
+                                    <h3><pre>{el.name}</pre></h3>
+                                    <li>{el.status}</li>
 
                                 </div>
                             ))

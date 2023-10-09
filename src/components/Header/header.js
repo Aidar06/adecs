@@ -2,6 +2,7 @@ import React from 'react';
 import {NavLink} from "react-router-dom";
 import {AiOutlineClose, AiOutlineMenu} from "react-icons/ai";
 import logo from './../../assets/img/logo_adecs.PNG'
+import {BsFillTelephoneFill} from "react-icons/bs";
 
 
 const Header = ({setBurger,burger}) => {
@@ -31,6 +32,9 @@ const Header = ({setBurger,burger}) => {
         }
     };
 
+    const coll = () => {
+        window.location.href = `tel:+996708816996`;
+    };
     return (
         <header id='header'>
             <div className="container">
@@ -49,7 +53,7 @@ const Header = ({setBurger,burger}) => {
                         </div>
                     </nav>
                     <div className='header--btn'>
-                        <button><pre>Войти</pre></button>
+                        <button onClick={()=> coll()}><BsFillTelephoneFill/></button>
                         <div className='header--btn__menu'>
                             <div style={{transform: burger? 'rotate(360deg)': ''}} onClick={()=> setBurger(!burger)} className='header--btn__menu--icon'>
                                 <AiOutlineClose style={{display: burger? '':'none'}}/>

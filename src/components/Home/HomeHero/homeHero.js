@@ -54,7 +54,7 @@ const HomeHero = () => {
                     </div>
                     <div className='homeHero--block'></div>
                     <div className="homeHero--info">
-                       <h1>СТРОИМ БУДУЩЕЕ <br/><span>{span}</span></h1>
+                       <h1>ADECS INTERNATIONAL <br/>СТРОИТЬ<br/><span>{span}</span></h1>
                     </div>
                 </div>
         </section>

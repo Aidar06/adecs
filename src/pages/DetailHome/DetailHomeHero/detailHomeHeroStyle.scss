@@ -10,7 +10,7 @@
     width: 60%;
     margin: 0 auto;
     h1{
-      font-size: 200px;
+      font-size: 100px;
       font-weight: 700;
       color: #ff7300;
       text-align: center;
@@ -40,7 +40,7 @@
     .detailHero{
       width: 100%;
       h1{
-        font-size: 160px;
+        font-size: 80px;
       }
     }
   }
@@ -50,18 +50,18 @@
   #detailHero{
     .detailHero{
       h1{
-        font-size: 130px;
+        font-size: 80px;
       }
     }
   }
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   #detailHero{
     .detailHero{
       h1{
-        font-size: 90px;
+        font-size: 50px;
       }
       p{
         font-size: 18px;
