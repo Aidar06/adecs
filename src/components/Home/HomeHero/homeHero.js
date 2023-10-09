@@ -33,7 +33,7 @@ const HomeHero = () => {
                 }
             }, 100)
             setTimeout(()=> {
-                setText(text === 'ВМЕСТЕ' ? 'ЛУЧШЕ' : text === 'КАЧЕСТВЕНЕЕ'? 'ВМЕСТЕ' : 'КАЧЕСТВЕНЕЕ')
+                setText(text === 'ВМЕСТЕ' ? 'ЛУЧШЕ' : text === 'КАЧЕСТВЕННО'? 'ВМЕСТЕ' : 'КАЧЕСТВЕННО')
             }, 100 * text.length + 100)
         }, 3000)
 
@@ -54,7 +54,7 @@ const HomeHero = () => {
                     </div>
                     <div className='homeHero--block'></div>
                     <div className="homeHero--info">
-                       <h1>ADECS INTERNATIONAL <br/>СТРОИТЬ<br/><span>{span}</span></h1>
+                       <h1>МЫ СТРОИМ <br/><span>{span}</span></h1>
                     </div>
                 </div>
         </section>
